@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --bg-color: rgb(20, 20, 20);
+    --accent: rgb(255, 166, 0);
+    --accent2: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--accent2);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    width: 100vw - 10vh;
+    margin-left: 5vh;
+    height: 85vh;
+    margin-top: 5vh;
+    flex-direction: row;
+}
+
+#sound-player {
+    display: flex;
+    flex-direction: column;
+    width: 23.75vw;
+
+    height: 80vh;
+    border: 2px solid var(--accent);
+    border-radius: 1vw;
+    box-shadow: 0 0 1.5vw 1.5vw rgb(10, 10, 10);
+    transition: 0.5s ease;
+    padding-left: 1.25vw;
+}
+
+#sound-player:hover {
+    border: 2.5px solid var(--accent2);
+}
+
+#sound-player h2 {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+#sound-player-cover {
+    width: 22.5vw;
+    height: 22.5vw;
+    background-color: rgb(25, 25, 25);
+}
+
+#sound-player-cover img {
+    width: 22.5vw;
+    height: 22.5vw;
+    transition: 1s;
+}
+
+#sound-player-duration {
+    color: gray;
+    width: 22.5vw;
+    justify-content: center;
+}
+
+.sound-row {
+    width: 70vw;
+    display: flex;
+    height: 15vh;
+    flex-direction: row;
+    margin-left: 2.5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.sound {
+    width: 15vh;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--accent2);
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    border-radius: 1vh;
+    transition: 0.5s ease-in-out;
+}
+
+.sound:hover {
+    border: 2px solid var(--accent);
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    padding-left: 5vh;
+}
